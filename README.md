@@ -40,3 +40,25 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+1) Project Summary:
+This project tests our ability to operationalize a Python flask app (app.py) that serves out predictions about housing prices through API calls. The project’s goal is to operationalize this working, machine learning micro-service using Kubernetes.
+
+2) Instructions on how to run the Python scripts and web app:
+First, we’ll need to create and activate the project directory (.devops) by running this command: 
+source ~/.devops/bin/activate
+Then, we’ll install all dependencies via Makefile by running this command:
+make install.
+Also, we’ll need to install: Docker, Hadolint and Kubernetes (Minikube).
+Now, since our environment is ready and after finishing Dockerfile, run_docker.sh and run_kubernetes.sh we can run the scripts so the container will be running and I can run the make_predictions.sh file to see the results.
+
+3) Repository Files Explanation:
+•	app.py: The python application code
+•	requirements.txt: Prerequisites needed
+•	Dockerfile: the dockerfile which we’ll build the docker image from
+•	Makefile: The Makefile includes instructions on environment setup and lint tests
+•	run_docker.sh: script to run docker container from the image
+•	run_kubernetes.sh: Runs the API as a Kubernetes deployment
+•	make_prediction.sh: When the container is running, this script is run in another terminal to generate the predictions.
+•	upload_docker.sh:  uploads the Docker image to DockerHub
+
