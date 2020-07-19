@@ -1,4 +1,4 @@
-https://circleci.com/gh/yara-selim/Udacity-Microservices-at-Scale.svg?style=svg
+[![yara-selim](https://circleci.com/gh/yara-selim/Udacity-Microservices-at-Scale.svg?style=svg)](https://circleci.com/gh/yara-selim/Udacity-Microservices-at-Scale)
 
 ## Project Overview
 
